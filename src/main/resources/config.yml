@@ -1,0 +1,39 @@
+#Использование системы отправки уведомлений в Discord
+use_webhook: false
+#URL Вебхука для отправки сообщений в Discord (Если use_webhook стоит true)
+#Если пуст - плагин выключается
+webhookURL: ""
+#Сообщение о использовании палочки/команды
+webhookUseStickText: "`%playerSenderName%` крашнул клиент игроку `%targetName%` использовав %method%"
+#Сообщение о выдаче палочки игроку
+webhookGiveStick: "`%player%` получил краш-палочку c ID - `%uniqueID%`"
+
+messages:
+  only-player-command: "Эту команду может использовать только игрок"
+  player-offline: "&Игрок не найден или не в сети."
+  noWebHook: "WebhookURL отсутствует или пуст. Плагин выключен, проверьте конфигурацию."
+  reload: "&Вы успешно перезагрузили плагин"
+  noPermission: "&У вас нету прав на использование данной команды"
+  success: "&Вы успешно крашнули клиент игры у игрока %player%"
+  help:
+    - "&aTest text for /help CMD"
+    - "&bTest text for /help CMD"
+    - "&cTest text for /help CMD"
+    - "&6Test text for /help CMD"
+    - "&7Test text for /help CMD"
+    - "&8Test text for /help CMD"
+
+
+
+
+item:
+  itemName: "§cКраш-палочка"
+  itemLore:
+    - "§aTest ItemLore"
+    - "§bTest ItemLore"
+    - "§cTest ItemLore"
+    - "§6Test ItemLore"
+  Stick_enchantment: false
+  enchantment_type: KNOCKBACK
+  #Ограничение по уровню зачарования - 5
+  enchantment_level: 3

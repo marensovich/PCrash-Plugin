@@ -1,0 +1,9 @@
+name: SkyMinePCrash
+version: '1.0'
+main: org.k0rv1nes.skyMinePCrash.SkyMinePCrash
+api-version: '1.18'
+authors: [ k0rv1nes ]
+website: https://skymine.fun
+depend:
+  - CommandAPI
+  - ProtocolLib
