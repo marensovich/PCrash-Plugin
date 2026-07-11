@@ -1,32 +1,36 @@
-# 💥 PCrash-Plugin
+# PCrash-Plugin
 
-A Minecraft plugin for **skymine.fun** implementing the **PCrash event** — a crash-style game event with Discord notifications.
+Плагин игрового события **PCrash** для сервера **skymine.fun**. Реализует краш-игру: растущий множитель, ставки кастомными предметами, уведомления в Discord через вебхук.
 
-## 📋 Description
+## Как проходит событие
 
-PCrash is a server event where players participate in a crash-style mini-game. The plugin sends real-time notifications to Discord via webhooks and features custom items for event participation.
+1. Администратор запускает краш командой
+2. Игроки делают ставки кастомными предметами через интерфейс
+3. Множитель начинает расти в реальном времени
+4. Каждый решает когда забрать выигрыш — или потерять всё при краше
+5. Итоги раунда публикуются в Discord-канал через вебхук
 
-## 🛠️ Tech Stack
+## Зависимости
 
-- **Java** — core language
-- **Bukkit / Spigot / Paper API** — Minecraft plugin framework (1.18)
-- **CommandAPI** — advanced command handling
-- **ProtocolLib** — packet manipulation
-- **Discord Webhooks** — real-time event notifications
+| Плагин | Для чего |
+|--------|----------|
+| [CommandAPI](https://www.spigotmc.org/resources/commandapi.62353/) | Продвинутые команды с автодополнением |
+| [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) | Кастомный UI через манипуляцию с пакетами |
 
-## ✨ Features
+## Установка
 
-- PCrash mini-game event system
-- Real-time Discord webhook notifications
-- Custom event items
-- Admin event control commands
-- Configurable event parameters
+1. Установите **CommandAPI** и **ProtocolLib**
+2. Скопируйте `.jar` в `plugins/`
+3. Перезапустите сервер
+4. В `config.yml` укажите Discord Webhook URL
+5. Настройте права администратора на команды события
 
-## 🚀 Installation
+## Стек
 
-1. Place JAR in `plugins/` folder
-2. Install: **CommandAPI**, **ProtocolLib**
-3. Configure Discord webhook URL in `config.yml`
-4. Restart server
+- **Java** + **Bukkit / Spigot / Paper 1.18**
+- **CommandAPI** + **ProtocolLib**
+- **Discord Webhooks** — публикация результатов раундов
 
-> Requires: Paper/Spigot 1.18+
+---
+
+**Автор:** [@marensovich](https://github.com/marensovich) · Сервер: [skymine.fun](https://skymine.fun)
